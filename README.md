@@ -9,21 +9,24 @@ LegalEase AI provides instant, jurisdiction-specific legal guidance through a co
 
 ## 🚀 Features
 
-- **AI Legal Assistant**: Conversational interface powered by Google's Gemini models
+- **AI Legal Assistant**: Conversational interface powered by Google's Gemini 2.5 Flash
 - **Specialized AI Agents**: Three dedicated agents for compliance, contract drafting, and risk assessment
 - **Document Generation**: Automated creation of common legal documents
 - **Indian Business Law Focus**: Specialized knowledge for Indian startups and SMBs
 - **Jurisdiction-Specific Guidance**: Location-aware legal advice
 - **User-Friendly Interface**: Designed for non-lawyers to understand complex legal concepts
+- **Responsive Design**: Optimized for desktop, tablet, and mobile devices
+- **Real-time Chat**: Interactive legal assistance with contextual responses
 
 ## 🛠️ Tech Stack
 
-- **Frontend**: React, Next.js, TypeScript
+- **Frontend**: React, Next.js 14, TypeScript
 - **Styling**: Tailwind CSS, shadcn/ui
 - **Icons**: Lucide React
-- **AI**: Google Gemini API
+- **AI**: Google Gemini 2.5 Flash API
 - **Hosting**: Vercel
 - **Code**: GitHub
+- **Responsive**: Mobile-first design
 
 ## 📁 Project Structure
 
