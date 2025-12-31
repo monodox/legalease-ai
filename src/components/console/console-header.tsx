@@ -12,8 +12,8 @@ export function ConsoleHeader() {
       <div className="flex items-center justify-between">
         <div className="flex items-center gap-2">
           <Gavel className="h-5 w-5 md:h-6 md:w-6 text-primary" />
-          {sidebarOpen && <h1 className="text-base md:text-lg font-semibold hidden sm:block">LegalEase AI</h1>}
-          <div className="h-4 md:h-6 w-px bg-border ml-2 hidden sm:block" />
+          <h1 className="text-base md:text-lg font-semibold hidden sm:block">LegalEase AI</h1>
+          <div className="h-4 md:h-6 w-px bg-border ml-2" />
           <Button 
             variant="ghost" 
             size="sm" 
