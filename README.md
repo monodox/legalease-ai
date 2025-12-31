@@ -2,7 +2,7 @@
 
 **AI-powered legal assistance platform designed to simplify Indian business law for startups and small businesses.**
 
-LegalEase AI provides instant, jurisdiction-specific legal guidance through a conversational interface and generates common legal documents based on business context, reducing reliance on expensive and slow legal consultations. Built with Next.js, Firebase, and Google's Gemini models, LegalEase AI makes legal compliance faster, more accessible, and easier to understand for non-lawyers, enabling founders to make informed decisions with confidence.
+LegalEase AI provides instant, jurisdiction-specific legal guidance through a conversational interface and generates common legal documents based on business context, reducing reliance on expensive and slow legal consultations. Built with Next.js and Google's Gemini models, LegalEase AI makes legal compliance faster, more accessible, and easier to understand for non-lawyers, enabling founders to make informed decisions with confidence.
 
 ## 🚀 Features
 
@@ -19,7 +19,6 @@ LegalEase AI provides instant, jurisdiction-specific legal guidance through a co
 
 - **Frontend**: Next.js 14, React 18, TypeScript
 - **Styling**: Tailwind CSS, shadcn/ui components
-- **Backend**: Firebase (Authentication, Firestore, Functions)
 - **AI**: Google Gemini 2.5 Flash, Genkit Framework
 - **Icons**: Lucide React
 - **Font**: Inter (Google Fonts)
@@ -94,7 +93,6 @@ src/
 ### Prerequisites
 - Node.js 18+ 
 - npm or yarn
-- Firebase project setup
 
 ### Installation
 
@@ -110,13 +108,7 @@ src/
    ```
 
 3. **Environment Setup**
-   Create a `.env.local` file:
-   ```env
-   NEXT_PUBLIC_FIREBASE_API_KEY=your_api_key
-   NEXT_PUBLIC_FIREBASE_AUTH_DOMAIN=your_auth_domain
-   NEXT_PUBLIC_FIREBASE_PROJECT_ID=your_project_id
-   NEXT_PUBLIC_GEMINI_API_KEY=your_gemini_api_key
-   ```
+   Create a `.env.local` file with your API keys
 
 4. **Run the development server**
    ```bash
@@ -143,7 +135,6 @@ src/
 - `/auth/forgot-password` - Password reset request
 - `/auth/reset-password` - Password reset
 - `/auth/verify-email` - Email verification
-- `/auth/organisation` - Join/Create organization
 
 ### Protected Routes
 - `/console/agents` - AI agents management
@@ -172,7 +163,6 @@ src/
 3. Deploy automatically on push to main
 
 ### Other Platforms
-- Firebase Hosting
 - Netlify
 - AWS Amplify
 
