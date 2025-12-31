@@ -7,6 +7,7 @@ LegalEase AI provides instant, jurisdiction-specific legal guidance through a co
 ## 🚀 Features
 
 - **AI Legal Assistant**: Conversational interface powered by Google's Gemini models
+- **Specialized AI Agents**: Three dedicated agents for compliance, contract drafting, and risk assessment
 - **Document Generation**: Automated creation of common legal documents
 - **Indian Business Law Focus**: Specialized knowledge for Indian startups and SMBs
 - **Jurisdiction-Specific Guidance**: Location-aware legal advice
@@ -19,7 +20,7 @@ LegalEase AI provides instant, jurisdiction-specific legal guidance through a co
 - **Frontend**: Next.js 14, React 18, TypeScript
 - **Styling**: Tailwind CSS, shadcn/ui components
 - **Backend**: Firebase (Authentication, Firestore, Functions)
-- **AI**: Google Gemini API
+- **AI**: Google Gemini 2.5 Flash, Genkit Framework
 - **Icons**: Lucide React
 - **Font**: Inter (Google Fonts)
 
@@ -27,6 +28,12 @@ LegalEase AI provides instant, jurisdiction-specific legal guidance through a co
 
 ```
 src/
+├── agents/                   # AI Agent System
+│   ├── types.ts             # Agent interfaces and types
+│   ├── index.ts             # Agent registry
+│   ├── compliance.agent.ts   # Compliance guidance agent
+│   ├── contract-drafting.agent.ts # Contract drafting agent
+│   └── risk-check.agent.ts   # Risk assessment agent
 ├── app/
 │   ├── auth/                 # Authentication pages
 │   │   ├── login/
@@ -36,6 +43,7 @@ src/
 │   │   ├── verify-email/
 │   │   └── organisation/
 │   ├── console/              # Dashboard/Console pages
+│   │   ├── agents/          # AI Agents management
 │   │   ├── chat/
 │   │   └── settings/
 │   ├── legal/                # Legal pages
@@ -50,6 +58,11 @@ src/
 │   ├── globals.css
 │   ├── layout.tsx
 │   └── page.tsx
+├── ai/                       # AI Integration Layer
+│   ├── flows/               # Genkit AI flows
+│   ├── prompts/             # AI prompts
+│   ├── types/               # AI type definitions
+│   └── genkit.ts            # Genkit configuration
 ├── components/
 │   ├── app/                  # App-wide components
 │   ├── console/              # Console-specific components
@@ -133,6 +146,7 @@ src/
 - `/auth/organisation` - Join/Create organization
 
 ### Protected Routes
+- `/console/agents` - AI agents management
 - `/console/chat` - AI legal assistant
 - `/console/settings` - User settings
 
